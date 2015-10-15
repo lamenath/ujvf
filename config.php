@@ -11,7 +11,7 @@
  * Change this for the URL of your repository.
  */
 define('PRISMIC_URL', 'https://lavieenjaune.prismic.io/api');
-define('PRISMIC_TOKEN', null);
+define('PRISMIC_TOKEN', 'MC5WaDlnS1NFQUFCOEFKcVdq.aU92D08V77-9bX7vv73vv73vv709Hu-_ve-_ve-_ve-_ve-_vVjvv73vv73vv73vv73vv73vv73vv73vv73vv70p77-9Eg');
 
 /*
  * Disqus integration for comments
