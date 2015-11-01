@@ -22,17 +22,6 @@ body {
   box-sizing: border-box;
 }
 
-.slide-container h2 {
-    position: relative;
-    border-radius: 50%;
-    border: 10px solid white;
-    text-align: center;
-    font-size: 90px;
-    text-align: center;
-    width: initial;
-    padding: 86px 50px;
-}
-
 .main h1, .main h2, .main h3 {
   font-weight: normal;
 }
@@ -511,12 +500,9 @@ li p {
 .alternated-highlights .illustration {
   height: 63%;
   width: 70%;
-  border-radius: 3px;
-  background: url(/assets/blank.png);
-}
-
-.illustration.image {
   background-size: cover;
+  border-radius: 3px;
+  background: url(/assets/blank.png) no-repeat center center;
 }
 
 .alternated-items > div {
@@ -530,7 +516,7 @@ li p {
 .alternated-highlights-full .illustration {
   height: 100%;
   background-size: cover;
-  background: url(/assets/blank.png) no-repeat center center;
+  /* background: url(/assets/blank.png) no-repeat center center; */
 }
 
 /* featured items simple */
@@ -810,5 +796,3 @@ hr.separator.small {
     height: 132px;
   }
 }
-
-
