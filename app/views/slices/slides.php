@@ -10,8 +10,10 @@
 
     <?php
       $illustration = $item->get('illustration') ? $item->get('illustration')->getMain() : null;
+      $icon = $item->get('icon') ? $item->get('icon')->getMain() : null;
       $blankImage = the_skin() && the_skin()->getImage('skin.blank-image') ? the_skin()->getImage('skin.blank-image')->getMain() : null;
       $illustrationUrl = $illustration ? $illustration->getUrl() : ($blankImage ? $blankImage->getUrl() : '');
+      $iconUrl = $icon ? $icon->getUrl() : null;
       $readMore = $item->get('read-more');
       $readMoreLabel = $item->get('read-more-label');
       $optionalLink = $item->get('optional-link');
@@ -23,19 +25,22 @@
 
         <div class="slide-container">
 
-            <?= $item->get('title') ? $item->get('title')->asHtml() : ''; ?>
+          <img src="<?= $iconUrl ?>" />
 
-            <?= $item->get('summary') ? $item->get('summary')->asHtml() : ''; ?>
+          <?= $item->get('title') ? $item->get('title')->asHtml() : ''; ?>
 
-            <?php if ($readMoreLabel): ?>
+          <?= $item->get('summary') ? $item->get('summary')->asHtml() : ''; ?>
 
-            <?php $url = $readMore ? $linkResolver->resolve($readMore) : null ?>
+          <?php if ($readMoreLabel): ?>
 
-            <a class="button" <?= $url ? 'href="'.$url.'"' : '' ?>>
+          <?php $url = $readMore ? $linkResolver->resolve($readMore) : null ?>
 
-                <?= $readMoreLabel->asText() ?>
+          <a class="button" <?= $url ? 'href="'.$url.'"' : '' ?>>
 
-            </a>
+              <?= $readMoreLabel->asText() ?>
+
+          </a>
+
 
             <?php endif ?>
 

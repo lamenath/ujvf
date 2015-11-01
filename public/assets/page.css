@@ -671,6 +671,12 @@ li p {
   transform: translate(-50%, -50%);
 }
 
+.slide-container img {
+  position: relative;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
 /* Contact us */
 
 .contact-us .feedback {
