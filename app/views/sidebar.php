@@ -6,6 +6,7 @@
 </div>
 
 <div class="sidebar-section">
+    <img src="https://prismic-io.s3.amazonaws.com/lavieenjaune/7299080fd2dbfb32cd8cdcfbcf3328745a3ed1e1_logo-ujvf-fond-transparent-1.png"/>
     <h3 class="blog-nav-item"><?= home_link('Home') ?></h3>
 </div>
 

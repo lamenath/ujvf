@@ -75,8 +75,8 @@ a {
 }
 
 .button:not([disabled]):hover {
-  border: 1px solid #0C0E57;
-  background: #0C0E57;
+  border: 1px solid ##6DBFC3;
+  background: ##6DBFC3;
   color: #fff;
 }
 
@@ -185,6 +185,12 @@ a {
 
 #right-panel .sidebar-section li a {
   font-size: 14px;
+}
+
+#right-panel .sidebar-section img {
+  position: relative;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 /*
