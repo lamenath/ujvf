@@ -582,6 +582,7 @@ li p {
 
 .slides.medium {
   height: 50vh;
+  border-bottom: 5px solid #5ab782;
 }
 
 .slides.small {
