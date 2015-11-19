@@ -75,9 +75,39 @@ a {
 }
 
 .button:not([disabled]):hover {
-  border: 1px solid ##6DBFC3;
-  background: ##6DBFC3;
+  border: 1px solid #0C0E57;
+  background: #0C0E57;
   color: #fff;
+}
+
+.icon-facebook::before {
+  font-family: 'StarterKit';
+  content: '\e00B';
+}
+
+.icon-twitter::before {
+  font-family: 'StarterKit';
+  content: '\e00E';
+}
+
+.icon-linkedin::before {
+  font-family: 'StarterKit';
+  content: '\e00D';
+}
+
+.icon-google-plus::before {
+  font-family: 'StarterKit';
+  content: '\e00C';
+}
+
+.icon-email::before {
+  font-family: 'StarterKit';
+  content: '\e00F';
+}
+
+.icon-pinterest::before {
+  font-family: 'StarterKit';
+  content: '\e011';
 }
 
 /*
@@ -166,12 +196,13 @@ a {
 }
 
 #right-panel .sidebar-section {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 #right-panel .sidebar-section h3 {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 30px;
+  letter-spacing: 5px;
   margin: 0;
 }
 
@@ -185,12 +216,6 @@ a {
 
 #right-panel .sidebar-section li a {
   font-size: 14px;
-}
-
-#right-panel .sidebar-section img {
-  position: relative;
-  height: 80px;
-  margin-bottom: 20px;
 }
 
 /*
