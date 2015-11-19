@@ -204,6 +204,7 @@ a {
   font-size: 30px;
   letter-spacing: 5px;
   margin: 0;
+  text-align: center;
 }
 
 #right-panel .sidebar-section ul {
@@ -216,6 +217,14 @@ a {
 
 #right-panel .sidebar-section li a {
   font-size: 14px;
+}
+
+#right-panel .sidebar-section img {    
+  position: relative;    
+  height: 150px;
+  width: 150px;    
+  margin-bottom: 80px;
+  padding-left: 31px;
 }
 
 /*
