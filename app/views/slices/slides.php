@@ -12,9 +12,8 @@
       $illustration = $item->get('illustration') ? $item->get('illustration')->getMain() : null;
       $icon = $item->get('icon') ? $item->get('icon')->getMain() : null;
       $blankImage = the_skin() && the_skin()->getImage('skin.blank-image') ? the_skin()->getImage('skin.blank-image')->getMain() : null;
-      $blankIcon = the_skin() && the_skin()->getImage('skin.blank-icon') ? the_skin()->getImage('skin.blank-icon')->getMain() : null;
       $illustrationUrl = $illustration ? $illustration->getUrl() : ($blankImage ? $blankImage->getUrl() : '');
-      $iconUrl = $icon ? $icon->getUrl() : ($blankIcon ? $blankIcon->getUrl() : '');
+      $iconUrl = $icon ? $icon->getUrl() : null;
       $readMore = $item->get('read-more');
       $readMoreLabel = $item->get('read-more-label');
       $optionalLink = $item->get('optional-link');
@@ -26,7 +25,7 @@
 
         <div class="slide-container">
 
-          <img src="<?= $iconUrl ?>" />
+          <div><img src="<?= $iconUrl ?>"/></div>
 
           <?= $item->get('title') ? $item->get('title')->asHtml() : ''; ?>
 
