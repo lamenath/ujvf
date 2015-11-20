@@ -482,6 +482,15 @@ li p {
   height: 60px;
 }
 
+/* Featured item rectangle */
+
+.featured-rectangle .illustration {
+  margin-bottom: 10px;
+  width: 300px;
+  height: 175px;
+  border-radius: 5px;
+}
+
 /* Alternated highlights */
 
 .alternated-highlights .col-2, .alternated-highlights-full .col-text, .alternated-highlights-full .col-illustration {
@@ -804,4 +813,15 @@ hr.separator.small {
   .main .slides.small {
     height: 132px;
   }
+
+}
+
+.featured-items .col-3:nth-child(3n +1):nth-last-child(1) {
+width: 100%;
+}
+
+.featured-items .col-3:nth-child(3n +1):nth-last-child(2),
+.featured-items .col-3:nth-child(3n +1):nth-last-child(2) ~ .col-3
+ {
+width: calc(100% / 2);
 }
