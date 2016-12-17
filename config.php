@@ -29,8 +29,8 @@ define('PAGE_SIZE', 10);
 /*
  * Your site metadata
  */
-define('SITE_TITLE', 'prismic.io Website Starter');
-define('SITE_DESCRIPTION', 'This is a sample theme using Bootstrap');
+define('SITE_TITLE', 'Union des Jeunes Vietnamiens de France');
+define('SITE_DESCRIPTION', 'Union des Jeunes Vietnamiens de France');
 define('ADMIN_EMAIL', '');
 
 /*
