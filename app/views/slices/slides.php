@@ -26,7 +26,7 @@
 
         <div class="slide-container">
 
-          <div><img src="<?= $iconUrl ?>"/></div>
+          <div><img src="<?= $iconUrl ?>" alt=""/></div>
 
           <?= $item->get('title') ? $item->get('title')->asHtml() : ''; ?>
 

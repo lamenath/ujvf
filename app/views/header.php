@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title><?= single_post_title() ?> <?= site_title() ?></title>
